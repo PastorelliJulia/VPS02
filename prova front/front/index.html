@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chamados</title>
+</head>
+<body onLoad="carregar()">
+    <header>
+        <div>
+            <img src="./assets/logo.png">
+        </div>
+        <button id="btCriar" onClick="Criar">Criar Chamado</button>
+    </header>
+    <main>
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Tipo</th>
+                    <th>Severidade</th>
+                    <th>Descrição</th>
+                    <th>Data</th>
+                    <th>Hora do Chamado</th>
+                    <th>Hora Início</th>
+                    <th>Hora Fim</th>
+                    <th>Destino</th>
+                    <th>Ações</th>     
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div id="modalPrincipal" class="modalPrincipal">
+            <div id="novo">
+                <div class="modalHeader">
+                    <h3>Criar Chamado</h3>
+                    <button onclick="modalPincipal.setAttribute('style','display:none')">X</button>
+                </div>
+                <div class="modalForm">
+                    <div class="tipo">
+                        <div class="opcoes">
+                            <input type="checkbox" id="incidente" />
+                            incidente
+                        </div>
+                    
+                    Nome:
+                    <input type="checkbox" id="nome" />
+                    Telefone:
+                    <input type="checkbox" id="telefone" />
+                    </div>
+
+                    Placa:
+                    <input class="pl" type="checkbox" id="placa" />
+                    Tipo:
+                    <input type="checkbox" id="tipo" />
+                    Modelo:
+                    <input type="checkbox" id="modelo" />
+                    Cor:
+                    <input type="checkbox" id="cor" />
+                    ID da Vaga:
+                    <input type="checkbox" id="id_vaga" />
+                    
+                </div>
+                <div class="lastModal">
+                    <button class="bn" onclick="cadastrarCliente()">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

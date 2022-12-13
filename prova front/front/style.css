@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ddd;
+}
+
+header{
+    background-color: #583ba7;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header > div > img{
+    height: 50px;
+    width: 50px;
+}
+
+header > button{
+    width: 200px;
+    height: 30px;
+    background: #ffffff67;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+main{
+    display:flex;
+    height: 100%;
+    align-items:center;
+    justify-content: center;
+}
+
+#tabela td, #tabela th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #tabela tr:nth-child(even){background-color: #81c0ea;}
+
+  #tabela tr{
+    background-color: #583ba7;
+  }
+  
+  #tabela tr:hover {background-color: #583ba7; color: white;}
+  
+  #tabela th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #583ba7;
+    color: white;
+  }
+
+  .modalPrincipal {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    align-items: center;
+}
+
+.modalHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    box-shadow: 0px 1px 5px #583ba7;
+}
+
+.modalHeader button {
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;  
+    margin: 4px;
+    background-color: #eceaeae5;
+    border-radius: 5px;
+    box-shadow: 0px 1px 4px rgb(53, 54, 54);
+}
+
+.modalForm{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.lastModal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.lastModal .bn {
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;  
+    margin: 4px;
+    width: 40%;
+    height: 50px;
+    background-color: #eceaeae5;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgb(47, 47, 48);
+}
+
+#novo {
+    display: block;
+    position: relative;
+    width: 450px;
+    top: 250px;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px black;
+}
+
+#novo input{
+    border: solid 1px #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    outline:none;
+    
+}
+
+#novo .pl{
+    border: solid 1px #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
