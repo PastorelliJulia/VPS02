@@ -14,7 +14,7 @@ create table chamados(
 	destino varchar(50) not null
 );
 
-LOAD DATA INFILE 'D:/Gabriel Alves/Senai2022/2DES/FrontEnd/Aula 15/avaliacao2/docs/chamados.csv'
+LOAD DATA INFILE ''
 INTO TABLE chamados
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
